@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/stetis.css">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/app.js"></script>
+<style>
+
+.error {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    left: -51px;
+    top: 307px;
+}
+
+.error2 {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    left: -68px;
+    top: 370px;
+}
+input[type=text], [type=password]{
+    width:200px;
+    height:40px;
+    background-color:#fff;
+    border-radius:2px;
+    margin-bottom:20px;
+    border:1px solid;
+    border-width:thin;
+    border-color:#fff;
+    border-bottom-color:#000;
+    cursor:pointer;
+    margin-left:10px;
+    padding:2px 5px;
+    outline: none;
+}
+
+}
+</style>
+<title>REPORT SHEET</title>
+</head>
+
+<body>
+
+<div id="container">
+<div  align="center" class="login" id="loginform">
+       	 <div><img src="image/STETiS_Logo_and_Name.JPG"  width="150" height="40"  style="margin-left:2px;"/></div>
+        <br>
+	<br>
+	<form action="" method="POST">
+            <input  id="username" type="text" placeholder="Staff ID" required> <i style=" color:#ccc" class= "fa fa-user fa-lg">  </i>
+            <div class="error" id="userlogin_err"> </div>
+            <input  id="password" type="password" placeholder="password" required> <i style=" color:#ccc;" class="fa fa-lock fa-lg">  </i>
+            <div class="error2" id="passwordlogin_err"></div>
+            <br>
+            <br>
+            <button class="loginbtn" id="login" >Login</button>
+        </form>
+        <br/>
+    <a  style="color:blue; font-size:12px;font-family: 'Muli', sans-serif;" href="lib/sign_up.php">Create an account</a>
+        
+    </div>
+</div>
+
+
+<div class="overlay">
+    <div align="center" class= "modal">
+        <div  class= "modal-dialogue" >
+            <img style="padding-top:10px" src="image/images.jpg" width="40" height="40" alt="error">
+        <div style="padding-top: 20px" > ERROR</div>
+       <br/>
+     
+         <div style="border-bottom:1px solid #ddd;padding-top: 10px "></div>
+        <div class="btn" style="width:100px;height: 36px;margin-top:10px;padding-top:7px;">OK </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
